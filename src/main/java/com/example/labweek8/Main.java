@@ -13,7 +13,7 @@ public class Main extends Application {
         VBox root = FXMLLoader.load(getClass().getResource("hello-view.fxml"));
         Scene scene = new Scene(root);
         primaryStage.setScene(scene);
-
+        scene.getStylesheets().add(getClass().getResource("style.css").toExternalForm());
         primaryStage.setTitle("Employee Database");
         primaryStage.show();
     }

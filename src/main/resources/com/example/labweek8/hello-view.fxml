@@ -9,6 +9,7 @@
       fx:controller="com.example.labweek8.Controller"
       spacing="10" alignment="center">
 
+
     <Label text="Employee Data" />
 
     <TableView fx:id="tableView" prefHeight="400">
@@ -46,6 +47,10 @@
         </columns>
     </TableView>
 
-    <!-- You can add more controls like buttons or labels if needed -->
+    <Label fx:id="employeeCountLabel" />
+    <Label fx:id="averageSalaryLabel" />
 
+    <!-- Remove employee button and associated handler -->
+    <TextField fx:id="employeeNameTextField" promptText="Enter employee name" />
+    <Button text="Delete Employee" onAction="#deleteEmployee" />
 </VBox>
